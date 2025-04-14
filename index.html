@@ -20,109 +20,83 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class=" m-0 border-0 bd-example">
+<body class="p-3 m-0 border-0 bd-example">
   
-    <nav class=" p-3 navbar navbar-expand-md bg-light container-fluid bg-primary-subtle">
-        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="POWER web" width="100" height="100">
-        </a>
+  <div class="container">
+    <div class="row">
+      <nav class=" m-0 p-3 navbar navbar-expand-md  container-fluid bg-primary-subtle">
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
             <li class="nav-item">
-              <a class="nav-link active" href="#">home</a>
+              <a class="nav-link  active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href=" #">Portfolio</a>
+              <a class="nav-link " aria-current="page" href="portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Projecten
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Project 1</a></li>
-                <li><a class="dropdown-item" href="#">Project 2</a></li>
-                <li><a class="dropdown-item" href="#">Project 3</a></li>
-                <li><a class="dropdown-item" href="#">Project 4</a></li>
-                <li><a class="dropdown-item" href="#">Project 5</a></li>
-                <li><a class="dropdown-item" href="#">Project 6</a></li>
+                <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+                <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+                <li><a class="dropdown-item" href="project3.html">Project 3</a></li>
+                <li><a class="dropdown-item" href="project4.html">Project 4</a></li>
+                <li><a class="dropdown-item" href="project5.html">Project 5</a></li>
+                <li><a class="dropdown-item" href="project6.html">Project 6</a></li>
               </ul>
             </li>
             <li class="nav-item float-end">
-              <a class="nav-link" href="contact.html">contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
     </nav>
-  <header class="row m-5 bg-primary-subtle">
-    <h1 class="col display-3 blauwgrijs text-center">may the power<br>be with you</h1>
-  </header>
-
-  <div class="container">
-    <div class="row">
+      <header class="row mb-5 mt-5 ">
+        <h1 class="col display-3 text-center">Portfolio<br>Liam Spruyt</h1>
+      </header>
       <main class="col-md-9">
-        <section id="shopintro" class="row">
-          <article class="col-12 mb-3">
-            <h2 class="text-uppercase fs-5 fw-bolder pt-3">shop</h2>
-            <p>In deze webshop vind je een uitgebreide collectie handleidingen en boeken over hard- en software, met een
-              focus op netwerken en Internet of Things (IoT). Of je nu wilt leren hoe je een betrouwbaar netwerk opzet
-              of de mogelijkheden van slimme apparaten wilt verkennen, ons assortiment biedt voor elk niveau de juiste
-              tools. Van beginners die de basisprincipes willen begrijpen tot professionals die de nieuwste
-              technologieën willen ontdekken, onze selectie bevat alles wat je nodig hebt. Met onze zorgvuldig
-              samengestelde vakliteratuur kun je jouw kennis verdiepen en je vaardigheden in netwerken en IoT verder
-              ontwikkelen.</p>
-          </article>
-          <article class="shop-item col-12 col-sm-6 col-md-4">
-            <h2 class="text-uppercase fs-6 fw-bolder pt-3">things</h2>
-            <p class="h6 small">with the casa hermans API</p>
-            <a href="#" rel="noopener">
-              <figure><img src="assets/images/profielfoto.png" class="img-fluid" alt="foto van things"
-                  title="the casa hermans API">
-                <figcaption class="h6 small mt-2"></figcaption>
-              </figure>
-            </a>
-          </article>
+        <section id="home" class="row border border-3 border-info p-3 col-12 row m-0 mt-1">
           
-
+           <figure class=" mb-3 col-md-9 col-lg-3"><img src="assets/images/profielfoto.png" class="img-fluid border border-info" alt="profielfoto liam"
+              title="Profiel Foto Liam Spruyt">
+            <figcaption class="h6 small mt-2"></figcaption>
+          </figure>
+            <p class="col-sm-9 mb-3">Hallo, Ik ben Liam Spruyt, student systeem en netwerkbeheer. <br> Ik hou van werken met computers en heb een passie om mensen te helpen. <br> Mijn interesses liggen vooral bij: <br>
+              Programeren: python. <br>
+              Routing en Switching.
+            </p>
+            
+           
+    
           
         </section>
+        
         <hr>
       </main>
 
       <aside class="col-md-3 border-start ps-5">
         <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
-        <p>POWER web<br>
-          <a href="mailto:powerweb@ap.be">powerweb@ap.be</a><br>
-          +32 45 67 89
+        <p>Liam Spruyt<br>
+          <a href="mailto:liam.spruyt@outlook.com">liam.spruyt@outlook.com</a><br>
+          +32 46 834 28 04
         </p>
         <ul class="list-inline socials">
           <li class="list-inline-item">
-            <a href="https://www.youtube.com" target="_blank">
-              <i class="bi bi-youtube blauwgrijs fs-6"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.instagram.com" target="_blank">
-              <i class="bi bi-instagram blauwgrijs fs-6"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://www.facebook.com" target="_blank">
-              <i class="bi bi-facebook blauwgrijs fs-6"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a href="https://twitter.com/" target="_blank">
-              <i class="bi bi-twitter blauwgrijs fs-6"></i>
+            <a href="https://be.linkedin.com/in/liam-spruyt-346268211" target="_blank">
+              <i class="bi bi-linkedin blauwgrijs fs-6"></i>
             </a>
           </li>
         </ul>
       </aside>
     </div>
   </div>
-  <footer class="container-fluid bg-light text-center h6 small p-4">&copy; jaartal POWER web enzo</footer>
+  <footer class="container-fluid text-center h6 small p-4"></footer>
 </body>
 
 </html>
