@@ -76,21 +76,21 @@
           <form name="contact" method="POST" netlify>
             <div class="form-group">
               <label for="email">Email-adres *</label>
-              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="naam@voorbeeld.com" required>
+              <input type="email" name="email" class="form-control form-control-lg" id="email" placeholder="naam@voorbeeld.com"  required>
             </div>
-            <div class="row mt-3 mb-3">
-              <div class="col">
+            <div class="row mt-3 mb-3 ">
+              <div class="col form-group">
                 <label for="naam">Naam *</label>
-                <input type="text" class="form-control form-control-lg" placeholder="Naam" required>
+                <input type="text" name="naam" class="form-control form-control-lg" placeholder="Naam" required>
               </div>
-              <div class="col">
+              <div class="col form-group">
                 <label for="Achternaam">Achternaam *</label>
-                <input type="text" class="form-control form-control-lg" placeholder="Achternaam" required>
+                <input type="text" name="Achternaam" class="form-control form-control-lg" placeholder="Achternaam" required>
               </div>
             </div>
             <div class="form-group">
               <label for="Textarea1">Inhoud mail *</label>
-              <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5" required></textarea>
+              <textarea class="form-control mb-3" name="inhoudemail" id="exampleFormControlTextarea1" rows="5" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary" >Submit</button>
           </form>
