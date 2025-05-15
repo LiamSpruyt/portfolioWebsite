@@ -4,7 +4,7 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
+  <title>Home</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -18,13 +18,24 @@
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- css van leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- js van leaflet-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- JavaScript: leaflet -->
+  <script src="js/leaflet.js" defer></script>
 </head>
 
-<body class="p-3 m-0 border-0 bd-example">
+<body class="p-3 m-0 border-0 bd-example ">
   
   <div class="container">
     <div class="row">
-      <nav class=" m-0 p-3 navbar navbar-expand-md  container-fluid bg-primary-subtle">
+      <nav class=" m-0 p-3 navbar navbar-expand-md  container-fluid bg-primary rounded bs-primary-border">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +72,7 @@
         <h1 class="col display-3 text-center">Portfolio<br>Liam Spruyt</h1>
       </header>
       <main class="col-md-9">
-        <section id="home" class="row border border-3 border-info p-3 col-12 row m-0 mt-1">
+        <section id="home" class="row border border-3 border-primary p-3 col-12 row m-0 mt-1 rounded border-primary">
           
            <figure class=" mb-3 col-md-9 col-lg-3"><img src="assets/images/profielfoto.png" class="img-fluid border border-info" alt="profielfoto liam"
               title="Profiel Foto Liam Spruyt">
@@ -77,10 +88,10 @@
           
         </section>
         
-        <hr>
+        
       </main>
 
-      <aside class="col-md-3 border-start ps-5">
+      <aside class="col-md-3 ps-5 d-none d-lg-block">
         <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
         <p>Liam Spruyt<br>
           <a href="mailto:liam.spruyt@outlook.com">liam.spruyt@outlook.com</a><br>
@@ -93,10 +104,12 @@
             </a>
           </li>
         </ul>
+        <div id="map"></div>
+        
       </aside>
     </div>
   </div>
-  <footer class="container-fluid text-center h6 small p-4"></footer>
+  <footer class="container-fluid text-center h6 small p-4"><i class="bi bi-c-circle"></i> 2025 Liam Spruyt</footer>
 </body>
 
 </html>

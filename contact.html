@@ -4,7 +4,7 @@
 <head>  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>shop</title>
+  <title>Contact</title>
   <!-- resetten van browsers -->
   <link rel="stylesheet" href="css/reset.css">
   <!-- Bootstrap CSS -->
@@ -18,13 +18,24 @@
     </script>
   <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- css van leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <!-- js van leaflet-->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- JavaScript: leaflet -->
+  <script src="js/leaflet.js" defer></script>
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
   
   <div class="container">
     <div class="row">
-      <nav class=" m-0 p-3 navbar navbar-expand-md  container-fluid bg-primary-subtle">
+      <nav class=" m-0 p-3 navbar navbar-expand-md  container-fluid bg-primary rounded">
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,40 +72,54 @@
         <h1 class="col display-3 text-center">Contact</h1>
       </header>
       <main class="col-md-9">
-        <section id="home" class="row border border-3 border-info p-3 col-12 row m-0 mt-1">
-          <h2>Contact Info</h2>
-           <p class="col-sm-9 mb-3">
-            <ul>
-              <h4>Naam:</h4>
-              <li>Liam Spruyt</li>
-              <h4>E-mail:</h4>
-              <li><a href="mailto:liam.spruyt@outlook.com">Liam.Spruyt@outlook.com</a></li>
-              <h4>Nummer:</h4>
-              <li>+32 46 834 28 04 </li>
-              <h4>Linkedin</h4>
-              <li><a href="https://be.linkedin.com/in/liam-spruyt-346268211" target="_blank">Liam Spruyt</a></li>
-            </ul>
-           </p>
+        <section id="home" class="row border border-3 border-primary p-3 col-12 row m-0 mt-1 rounded ">
+          <form name="contact" method="POST" netlify>
+            <div class="form-group">
+              <label for="email">Email-adres *</label>
+              <input type="email" class="form-control form-control-lg" id="exampleFormControlInput1" placeholder="naam@voorbeeld.com" required>
+            </div>
+            <div class="row mt-3 mb-3">
+              <div class="col">
+                <label for="naam">Naam *</label>
+                <input type="text" class="form-control form-control-lg" placeholder="Naam" required>
+              </div>
+              <div class="col">
+                <label for="Achternaam">Achternaam *</label>
+                <input type="text" class="form-control form-control-lg" placeholder="Achternaam" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Textarea1">Inhoud mail *</label>
+              <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" >Submit</button>
+          </form>
+          
           
    
          
        </section>
-        <hr>
+        
       </main>
 
-      <aside class="col-md-3 border-start ps-5">
-        <h2 class="text-uppercase fs-5 fw-bolder pt-3">Projecten</h2>
-        <a href="project1.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 1</h4></a>
-        <a href="project2.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 2</h4></a>
-        <a href="project3.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 3</h4></a>
-        <a href="project4.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 4</h4></a>
-        <a href="project5.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 5</h4></a>
-        <a href="project6.html"><h4 class="text-uppercase fs-6 fw-bolder pt-3">Project 6</h4></a>
-
+      <aside class="col-md-3 ps-5 d-none d-lg-block">
+        <h2 class="text-uppercase fs-5 fw-bolder pt-3">contact</h2>
+        <p>Liam Spruyt<br>
+          <a href="mailto:liam.spruyt@outlook.com">liam.spruyt@outlook.com</a><br>
+          +32 46 834 28 04
+        </p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://be.linkedin.com/in/liam-spruyt-346268211" target="_blank">
+              <i class="bi bi-linkedin blauwgrijs fs-6"></i>
+            </a>
+          </li>
+        </ul>
+        <div id="map"></div>
       </aside>
     </div>
   </div>
-  <footer class="container-fluid text-center h6 small p-4"></footer>
+  <footer class="container-fluid text-center h6 small p-4"><i class="bi bi-c-circle"></i> 2025 Liam Spruyt</footer>
 </body>
 
 </html>
