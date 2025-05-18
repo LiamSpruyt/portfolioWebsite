@@ -2,8 +2,8 @@ body {
     background-color: rgba(161, 177, 228, 0.589);
 }
 
-.border {
-    border-color: blue;
+.blue {
+    color: blue;
 }
 #map { 
     height: 200px;
